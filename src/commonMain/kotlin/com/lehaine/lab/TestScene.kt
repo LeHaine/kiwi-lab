@@ -25,35 +25,8 @@ sealed class Input {
 class TestScene : Scene() {
 
     override suspend fun Container.sceneInit() {
-        val atlas = resourcesVfs["tiles.atlas.json"].readAtlas()
-        val controller = InputController<Input>(views)
 
-        controller.addAxis(
-            Input.MoveHorizontal,
-            listOf(Key.D),
-            listOf(GameButton.LX),
-            listOf(Key.A),
-            listOf(GameButton.LX)
-        )
-        val sprite = enhancedSprite {
-            smoothing = false
-            playAnimationLooped(atlas.createEnhancedSpriteAnimation("heroRun") {
-                frames(0..1, frameTime = 2.seconds)
-                frames(2..3, frameTime = 500.milliseconds)
-                frames(1..2, frameTime = 100.milliseconds)
-            })
-            scale(5, 5)
-            position(50, 50)
-        }
-
-        addUpdater {
-            controller.update()
-            val moveDir = controller.strength(Input.MoveHorizontal)
-            if (controller.down(Input.MoveHorizontal)) {
-                sprite.x += moveDir * 3
-            }
-        }
-
+        testInputController()
 
         keys {
             down(Key.ESCAPE) {
@@ -66,6 +39,52 @@ class TestScene : Scene() {
         }
     }
 
+    private suspend fun Container.testInputController() {
+        val atlas = resourcesVfs["tiles.atlas.json"].readAtlas()
+        val controller = InputController<Input>(views)
+
+        controller.addAxis(
+            Input.MoveHorizontal,
+            listOf(Key.D, Key.RIGHT),
+            listOf(GameButton.LX),
+            listOf(Key.A, Key.LEFT),
+            listOf(GameButton.LX)
+        )
+        val ca1 = controller.createAccess("test", true)
+        val ca2 = controller.createAccess("test2")
+
+        val sprite1 = enhancedSprite {
+            smoothing = false
+            playAnimationLooped(atlas.createEnhancedSpriteAnimation("heroRun") {
+                frames(0..1, frameTime = 2.seconds)
+                frames(2..3, frameTime = 500.milliseconds)
+                frames(1..2, frameTime = 100.milliseconds)
+            })
+            scale(5, 5)
+            position(50, 50)
+        }
+
+        val sprite2 = enhancedSprite {
+            smoothing = false
+            playAnimationLooped(atlas.createEnhancedSpriteAnimation("heroRun") {
+                frames(0..1, frameTime = 2.seconds)
+                frames(2..3, frameTime = 500.milliseconds)
+                frames(1..2, frameTime = 100.milliseconds)
+            })
+            scale(5, 5)
+            position(100, 50)
+        }
+
+        addUpdater {
+            controller.update()
+            if (ca1.down(Input.MoveHorizontal)) {
+                sprite1.x += ca1.strength(Input.MoveHorizontal) * 3
+            }
+            if (ca2.down(Input.MoveHorizontal)) {
+                sprite2.x += ca2.strength(Input.MoveHorizontal) * 3
+            }
+        }
+    }
 
     private suspend fun Container.testEnhancedSprites() {
         val atlas = resourcesVfs["tiles.atlas.json"].readAtlas()
