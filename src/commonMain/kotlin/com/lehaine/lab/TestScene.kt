@@ -10,10 +10,7 @@ import com.soywiz.korev.GameButton
 import com.soywiz.korev.Key
 import com.soywiz.korge.input.keys
 import com.soywiz.korge.scene.Scene
-import com.soywiz.korge.view.Container
-import com.soywiz.korge.view.addUpdater
-import com.soywiz.korge.view.position
-import com.soywiz.korge.view.scale
+import com.soywiz.korge.view.*
 import com.soywiz.korim.atlas.readAtlas
 import com.soywiz.korio.file.std.resourcesVfs
 
@@ -24,11 +21,30 @@ sealed class Input {
 
 class TestScene : Scene() {
 
+    private val testContainer = Container()
     override suspend fun Container.sceneInit() {
 
-        testInputController()
-
+        val sceneText = text("SELECT SCENE (0-9)")
+        addChild(testContainer)
         keys {
+            down {
+                when (it.key) {
+                    Key.N0, Key.N1, Key.N2, Key.N3, Key.N4,
+                    Key.N5, Key.N6, Key.N7, Key.N8, Key.N9 -> testContainer.removeChildren()
+                    else -> {
+                        // do nothing
+                    }
+                }
+
+            }
+            down(Key.N1) {
+                sceneText.text = "Test Input Controller"
+                testContainer.testInputController()
+            }
+            down(Key.N2) {
+                sceneText.text = "Test Enhanced Sprite"
+                testContainer.testEnhancedSprites()
+            }
             down(Key.ESCAPE) {
                 stage?.views?.debugViews = false
                 stage?.gameWindow?.run {
