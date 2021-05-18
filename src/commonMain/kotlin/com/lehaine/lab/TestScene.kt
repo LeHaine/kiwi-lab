@@ -79,7 +79,7 @@ class TestScene : Scene() {
 
         fun createLight(color: RGBA): Container {
             val lightContainer = Container()
-            val lightCore = lightContainer.enhancedSprite(atlas.getByPrefix("fxSpotLightCore"), smoothing = false) {
+            val lightCore = lightContainer.enhancedSprite(atlas.getByPrefix("fxSpotLightCore"), smoothing = true) {
                 blendMode = BlendMode.ADD
                 smoothing = true
                 anchor(Anchor.MIDDLE_CENTER)
@@ -87,7 +87,8 @@ class TestScene : Scene() {
                 alpha = 0.4
                 scale = 0.5
             }
-            val coreHalo = lightContainer.enhancedSprite(atlas.getByPrefix("fxSpotLight"), smoothing = false) {
+
+            val coreHalo = lightContainer.enhancedSprite(atlas.getByPrefix("fxSpotLight"), smoothing = true) {
                 blendMode = BlendMode.ADD
                 anchor(Anchor.MIDDLE_CENTER)
                 colorMul = color
@@ -95,7 +96,7 @@ class TestScene : Scene() {
                 alpha = 0.36
             }
 
-            val largeHalo = lightContainer.enhancedSprite(atlas.getByPrefix("fxSpotLight"), smoothing = false) {
+            val largeHalo = lightContainer.enhancedSprite(atlas.getByPrefix("fxSpotLight"), smoothing = true) {
                 blendMode = BlendMode.ADD
                 anchor(Anchor.MIDDLE_CENTER)
                 colorMul = color
@@ -106,18 +107,46 @@ class TestScene : Scene() {
             return lightContainer
         }
 
+        createLight(Colors["#fffd7a"])
+            .addToLayer(layers, 1)
+            .apply {
+                x =75.0
+                y = 100.0
+                alpha = 0.5
+                scale = 2.25
+            }
+
         createLight(Colors.GREEN)
             .addToLayer(layers, 1)
             .apply {
                 x = 150.0
                 y = 100.0
+                alpha = 0.6
+                scale = 1.0
             }
 
         createLight(Colors.PURPLE)
             .addToLayer(layers, 1)
             .apply {
+                x = 225.0
+                y = 100.0
+                scale = 3.0
+            }
+
+        createLight(Colors["#524680"])
+            .addToLayer(layers, 1)
+            .apply {
                 x = 300.0
                 y = 100.0
+                scale = 1.5
+            }
+
+        createLight(Colors["#b75b35"])
+            .addToLayer(layers, 1)
+            .apply {
+                x = 375.0
+                y = 100.0
+                scale = 1.5
             }
 
         val sprite1 = layers.enhancedSprite(layer = 0) {
@@ -128,7 +157,7 @@ class TestScene : Scene() {
                 frames(1..2, frameTime = 100.milliseconds)
             })
             scale(5, 5)
-            position(50, 50)
+            position(50, 25)
         }
 
         addUpdater {
