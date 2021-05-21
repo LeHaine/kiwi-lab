@@ -89,29 +89,13 @@ class TestScene : Scene() {
         fun createLight(color: RGBA, intensity: Double = 1.0): Container {
             val lightContainer = Container()
             val darkerLight = Colors["#6841cd"]
-            val lightCore = lightContainer.enhancedSprite(atlas.getByPrefix("fxSpotLightCore"), smoothing = true) {
+            val lightCore = lightContainer.enhancedSprite(atlas.getByPrefix("fxSpotLight"), smoothing = true) {
                 blendMode = BlendMode.ADD
                 smoothing = true
                 anchor(Anchor.MIDDLE_CENTER)
-                colorMul = color
-                alpha = intensity
-                scale = 0.5
-            }
-
-            val coreHalo = lightContainer.enhancedSprite(atlas.getByPrefix("fxSpotLight"), smoothing = true) {
-                blendMode = BlendMode.ADD
-                anchor(Anchor.MIDDLE_CENTER)
-                colorMul = color.interpolateWith(0.4, darkerLight)
-                scale = 0.3
-                alpha = intensity * 0.9
-            }
-
-            val largeHalo = lightContainer.enhancedSprite(atlas.getByPrefix("fxSpotLight"), smoothing = true) {
-                blendMode = BlendMode.ADD
-                anchor(Anchor.MIDDLE_CENTER)
                 colorMul = color.interpolateWith(0.66, darkerLight)
-                scale = 0.5
-                alpha = intensity * 0.5
+                alpha = intensity
+               // scale = 0.5
             }
 
             return lightContainer
@@ -122,7 +106,6 @@ class TestScene : Scene() {
             .apply {
                 x = 75.0
                 y = 200.0
-                alpha = 0.5
             }
 
         createLight(Colors.GREEN, 0.9)
@@ -130,7 +113,6 @@ class TestScene : Scene() {
             .apply {
                 x = 150.0
                 y = 200.0
-                alpha = 0.6
             }
 
         createLight(Colors.PURPLE, 0.75)
