@@ -169,7 +169,7 @@
             <key>trimMargin</key>
             <uint>1</uint>
             <key>trimMode</key>
-            <enum type="SpriteSettings::TrimMode">None</enum>
+            <enum type="SpriteSettings::TrimMode">Trim</enum>
             <key>tracerTolerance</key>
             <int>200</int>
             <key>heuristicMask</key>
@@ -289,6 +289,21 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
+            <key type="filename">export_tiles/fxSpotLight0.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>16,16,32,32</rect>
+                <key>scale9Paddings</key>
+                <rect>16,16,32,32</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
             <key type="filename">export_tiles/fxSwipe0.png</key>
             <key type="filename">export_tiles/fxSwipe1.png</key>
             <key type="filename">export_tiles/fxSwipe2.png</key>
@@ -318,6 +333,36 @@
                 <rect>8,3,17,5</rect>
                 <key>scale9Paddings</key>
                 <rect>8,3,17,5</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">export_tiles/heroDie0.png</key>
+            <key type="filename">export_tiles/heroDie1.png</key>
+            <key type="filename">export_tiles/heroDie2.png</key>
+            <key type="filename">export_tiles/heroDie3.png</key>
+            <key type="filename">export_tiles/heroDie4.png</key>
+            <key type="filename">export_tiles/heroDie5.png</key>
+            <key type="filename">export_tiles/heroDie6.png</key>
+            <key type="filename">export_tiles/heroDie7.png</key>
+            <key type="filename">export_tiles/heroIdle0.png</key>
+            <key type="filename">export_tiles/heroIdle1.png</key>
+            <key type="filename">export_tiles/heroRun0.png</key>
+            <key type="filename">export_tiles/heroRun1.png</key>
+            <key type="filename">export_tiles/heroRun2.png</key>
+            <key type="filename">export_tiles/heroRun3.png</key>
+            <key type="filename">export_tiles/heroSleeping0.png</key>
+            <key type="filename">export_tiles/heroSleeping1.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>6,5,12,10</rect>
+                <key>scale9Paddings</key>
+                <rect>6,5,12,10</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>

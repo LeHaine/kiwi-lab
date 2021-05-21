@@ -93,7 +93,7 @@ class TestScene : Scene() {
                 blendMode = BlendMode.ADD
                 smoothing = true
                 anchor(Anchor.MIDDLE_CENTER)
-                colorMul = color.interpolateWith(0.66, darkerLight)
+                colorMul = color.interpolateWith(0.2, darkerLight)
                 alpha = intensity
                // scale = 0.5
             }

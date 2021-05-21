@@ -2,7 +2,7 @@
 
 {
 	"filename": "fxCircle0.png",
-	"frame": {"x":106,"y":50,"w":16,"h":16},
+	"frame": {"x":38,"y":104,"w":16,"h":16},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
@@ -10,7 +10,7 @@
 },
 {
 	"filename": "fxDot0.png",
-	"frame": {"x":118,"y":39,"w":3,"h":3},
+	"frame": {"x":118,"y":41,"w":3,"h":3},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":3,"h":3},
@@ -18,31 +18,31 @@
 },
 {
 	"filename": "fxGib0.png",
-	"frame": {"x":118,"y":2,"w":8,"h":5},
+	"frame": {"x":101,"y":97,"w":6,"h":5},
 	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":8,"h":5},
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":0,"w":6,"h":5},
 	"sourceSize": {"w":8,"h":5}
 },
 {
 	"filename": "fxGib1.png",
-	"frame": {"x":118,"y":11,"w":8,"h":5},
+	"frame": {"x":118,"y":23,"w":6,"h":5},
 	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":8,"h":5},
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":0,"w":6,"h":5},
 	"sourceSize": {"w":8,"h":5}
 },
 {
 	"filename": "fxGib2.png",
-	"frame": {"x":118,"y":20,"w":8,"h":5},
+	"frame": {"x":118,"y":32,"w":5,"h":5},
 	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":8,"h":5},
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":0,"w":5,"h":5},
 	"sourceSize": {"w":8,"h":5}
 },
 {
 	"filename": "fxImpact0.png",
-	"frame": {"x":106,"y":70,"w":15,"h":9},
+	"frame": {"x":2,"y":111,"w":15,"h":9},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":15,"h":9},
@@ -50,7 +50,7 @@
 },
 {
 	"filename": "fxLine0.png",
-	"frame": {"x":30,"y":194,"w":33,"h":3},
+	"frame": {"x":64,"y":99,"w":33,"h":3},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":33,"h":3},
@@ -58,15 +58,15 @@
 },
 {
 	"filename": "fxLineDir0.png",
-	"frame": {"x":67,"y":197,"w":33,"h":3},
+	"frame": {"x":2,"y":104,"w":32,"h":3},
 	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":33,"h":3},
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":0,"w":32,"h":3},
 	"sourceSize": {"w":33,"h":3}
 },
 {
 	"filename": "fxSmallCircle0.png",
-	"frame": {"x":118,"y":29,"w":6,"h":6},
+	"frame": {"x":118,"y":13,"w":6,"h":6},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":6,"h":6},
@@ -90,31 +90,31 @@
 },
 {
 	"filename": "fxSwipe0.png",
-	"frame": {"x":70,"y":50,"w":32,"h":32},
+	"frame": {"x":70,"y":50,"w":27,"h":30},
 	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":0,"w":27,"h":30},
 	"sourceSize": {"w":32,"h":32}
 },
 {
 	"filename": "fxSwipe1.png",
-	"frame": {"x":2,"y":70,"w":32,"h":32},
+	"frame": {"x":2,"y":70,"w":27,"h":30},
 	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":1,"w":27,"h":30},
 	"sourceSize": {"w":32,"h":32}
 },
 {
 	"filename": "fxSwipe2.png",
-	"frame": {"x":66,"y":86,"w":32,"h":32},
+	"frame": {"x":33,"y":70,"w":27,"h":30},
 	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":1,"w":27,"h":30},
 	"sourceSize": {"w":32,"h":32}
 },
 {
 	"filename": "fxTail0.png",
-	"frame": {"x":86,"y":182,"w":33,"h":11},
+	"frame": {"x":64,"y":84,"w":33,"h":11},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":33,"h":11},
@@ -122,130 +122,130 @@
 },
 {
 	"filename": "heroDie0.png",
-	"frame": {"x":38,"y":70,"w":24,"h":20},
+	"frame": {"x":58,"y":106,"w":10,"h":9},
 	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":20},
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":11,"w":10,"h":9},
 	"sourceSize": {"w":24,"h":20}
 },
 {
 	"filename": "heroDie1.png",
-	"frame": {"x":38,"y":94,"w":24,"h":20},
+	"frame": {"x":21,"y":111,"w":11,"h":9},
 	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":20},
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":11,"w":11,"h":9},
 	"sourceSize": {"w":24,"h":20}
 },
 {
 	"filename": "heroDie2.png",
-	"frame": {"x":102,"y":86,"w":24,"h":20},
+	"frame": {"x":113,"y":75,"w":9,"h":7},
 	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":20},
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":12,"w":9,"h":7},
 	"sourceSize": {"w":24,"h":20}
 },
 {
 	"filename": "heroDie3.png",
-	"frame": {"x":102,"y":110,"w":24,"h":20},
+	"frame": {"x":115,"y":86,"w":9,"h":6},
 	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":20},
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":14,"w":9,"h":6},
 	"sourceSize": {"w":24,"h":20}
 },
 {
 	"filename": "heroDie4.png",
-	"frame": {"x":2,"y":106,"w":24,"h":20},
+	"frame": {"x":101,"y":87,"w":10,"h":6},
 	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":20},
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":14,"w":10,"h":6},
 	"sourceSize": {"w":24,"h":20}
 },
 {
 	"filename": "heroDie5.png",
-	"frame": {"x":30,"y":118,"w":24,"h":20},
+	"frame": {"x":112,"y":50,"w":10,"h":7},
 	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":20},
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":13,"w":10,"h":7},
 	"sourceSize": {"w":24,"h":20}
 },
 {
 	"filename": "heroDie6.png",
-	"frame": {"x":2,"y":130,"w":24,"h":20},
+	"frame": {"x":72,"y":106,"w":10,"h":8},
 	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":20},
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":12,"w":10,"h":8},
 	"sourceSize": {"w":24,"h":20}
 },
 {
 	"filename": "heroDie7.png",
-	"frame": {"x":58,"y":122,"w":24,"h":20},
+	"frame": {"x":86,"y":106,"w":10,"h":8},
 	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":20},
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":12,"w":10,"h":8},
 	"sourceSize": {"w":24,"h":20}
 },
 {
 	"filename": "heroIdle0.png",
-	"frame": {"x":30,"y":142,"w":24,"h":20},
+	"frame": {"x":114,"y":97,"w":7,"h":8},
 	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":20},
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":12,"w":7,"h":8},
 	"sourceSize": {"w":24,"h":20}
 },
 {
 	"filename": "heroIdle1.png",
-	"frame": {"x":2,"y":154,"w":24,"h":20},
+	"frame": {"x":101,"y":50,"w":7,"h":9},
 	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":20},
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":11,"w":7,"h":9},
 	"sourceSize": {"w":24,"h":20}
 },
 {
 	"filename": "heroRun0.png",
-	"frame": {"x":86,"y":134,"w":24,"h":20},
+	"frame": {"x":101,"y":75,"w":8,"h":8},
 	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":20},
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":12,"w":8,"h":8},
 	"sourceSize": {"w":24,"h":20}
 },
 {
 	"filename": "heroRun1.png",
-	"frame": {"x":58,"y":146,"w":24,"h":20},
+	"frame": {"x":114,"y":109,"w":7,"h":7},
 	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":20},
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":13,"w":7,"h":7},
 	"sourceSize": {"w":24,"h":20}
 },
 {
 	"filename": "heroRun2.png",
-	"frame": {"x":30,"y":166,"w":24,"h":20},
+	"frame": {"x":115,"y":61,"w":8,"h":8},
 	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":20},
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":12,"w":8,"h":8},
 	"sourceSize": {"w":24,"h":20}
 },
 {
 	"filename": "heroRun3.png",
-	"frame": {"x":2,"y":178,"w":24,"h":20},
+	"frame": {"x":118,"y":2,"w":7,"h":7},
 	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":20},
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":13,"w":7,"h":7},
 	"sourceSize": {"w":24,"h":20}
 },
 {
 	"filename": "heroSleeping0.png",
-	"frame": {"x":86,"y":158,"w":24,"h":20},
+	"frame": {"x":100,"y":106,"w":10,"h":8},
 	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":20},
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":12,"w":10,"h":8},
 	"sourceSize": {"w":24,"h":20}
 },
 {
 	"filename": "heroSleeping1.png",
-	"frame": {"x":58,"y":170,"w":24,"h":20},
+	"frame": {"x":101,"y":63,"w":10,"h":8},
 	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":20},
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":12,"w":10,"h":8},
 	"sourceSize": {"w":24,"h":20}
 }],
 "meta": {
@@ -253,8 +253,8 @@
 	"version": "1.0",
 	"image": "tiles.atlas.png",
 	"format": "RGBA8888",
-	"size": {"w":128,"h":202},
+	"size": {"w":127,"h":122},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:030ad8eacf1f71338d730950cbb2d4da:3a0dc2904c7a992d27b91a88a84883a7:5e5ef3518cc1a44e4ed4954a57ade08c$"
+	"smartupdate": "$TexturePacker:SmartUpdate:8a1861c86f4ab9706bfa4da006551a2e:3a0dc2904c7a992d27b91a88a84883a7:5e5ef3518cc1a44e4ed4954a57ade08c$"
 }
 }
