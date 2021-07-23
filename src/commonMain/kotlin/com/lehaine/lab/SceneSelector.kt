@@ -9,10 +9,7 @@ import com.soywiz.korio.async.launchImmediately
 
 class SceneSelector : Scene() {
 
-    private val testContainer = Container()
     override suspend fun Container.sceneInit() {
-
-        addChild(testContainer)
         text(
             """
             SELECT SCENE (1-9)
@@ -25,16 +22,6 @@ class SceneSelector : Scene() {
         """.trimIndent()
         )
         keys {
-            down {
-                when (it.key) {
-                    Key.N0, Key.N1, Key.N2, Key.N3, Key.N4,
-                    Key.N5, Key.N6, Key.N7, Key.N8, Key.N9 -> testContainer.removeChildren()
-                    else -> {
-                        // do nothing
-                    }
-                }
-
-            }
             down(Key.N1) {
                 launchImmediately {
                     sceneContainer.changeTo<InputControllerTestScene>()
