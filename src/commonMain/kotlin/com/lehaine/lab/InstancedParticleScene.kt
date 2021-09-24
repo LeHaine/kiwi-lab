@@ -17,6 +17,7 @@ import com.soywiz.korge.view.addUpdater
 import com.soywiz.korge.view.fast.FSprite
 import com.soywiz.korge.view.text
 import com.soywiz.korim.atlas.readAtlas
+import com.soywiz.korim.color.RGBA
 import com.soywiz.korio.async.launchImmediately
 import com.soywiz.korio.file.std.resourcesVfs
 import kotlin.math.PI
@@ -77,7 +78,7 @@ class InstancedParticleScene : Scene() {
             create(50) {
                 val p = particleSimulator.alloc(particleContainer, atlas.getRandomByPrefix("fxDot"), x, y)
                 particleContainer.run {
-                    //     p.color = RGBA((111..255).random(), 0, 0, (0..255).random())
+                    p.colorMul = RGBA((111..255).random(), 0, 0, (0..255).random())
                     p.xDelta = dir * (3f..7f).random()
                     p.yDelta = (-1f..0f).random()
                     p.gravityY = (0.07f..0.1f).random()
